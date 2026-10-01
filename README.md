@@ -1,4 +1,4 @@
-# Execució del projecte Activitat 4: Entonr LAMP amb Docker Compose
+# Execució del projecte Activitat 4: Entorn LAMP amb Docker Compose
 
 - **Descripció: Crearem un entorn híbrid (LAMP: Linux, Apache, Mysql i PHP) amb Docker i Docker Compose.**
 
