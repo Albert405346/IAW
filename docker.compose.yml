@@ -1,0 +1,24 @@
+services:
+  web:
+    image: php:8.2-apache
+    volumes:
+      - ./html:/var/www/html
+    ports:
+      - "8080:80"
+
+  db:
+    image: mysql:5.7
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: exemple
+      MYSQL_USER: usuari
+      MYSQL_PASSWORD: contrasenya
+    ports:
+      - "3306:3306"
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    environment:
+      PMA_HOST: db
+    ports:
+      - "8081:80"
+      
